@@ -14,7 +14,7 @@ const getPost = async(id: string): Promise<any> => {
         })
     return response.json()
 }
-const Page = async({params}: Props) => {
+const Page = async({params}: any) => {
     const post: any = await getPost(params.id)
     return (
         <div className='flex flex-col items-center'>
