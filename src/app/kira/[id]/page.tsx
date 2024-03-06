@@ -1,5 +1,10 @@
 import React from 'react';
-import {Props} from "@/app/kira/[id]/layout";
+interface Props {
+    params: {
+        id: string
+    }
+    children: React.ReactNode
+}
 const getPost = async(id: string): Promise<any> => {
     const response  = await fetch('https://jsonplaceholder.typicode.com/posts/'+id,
         {

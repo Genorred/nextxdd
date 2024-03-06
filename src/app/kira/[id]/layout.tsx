@@ -1,6 +1,6 @@
 import React from 'react';
 import {Metadata} from "next";
-export interface Props {
+interface Props {
     params: {
         id: string
     }
