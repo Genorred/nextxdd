@@ -3,6 +3,9 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import './a.sass'
+import {SessionProvider} from "next-auth/react";
+import Providers from "@/components/Providers";
+import Navigation from "@/components/Navigation";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -19,11 +22,10 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={inter.className}>
-        <div className='flex justify-center align-middle bg-blue-600'>
-            <Link className='p-3' href={'/kira'}>Posts</Link>
-            <Link className='p-3' href={'/makima'}>Makima</Link>
-        </div>
-        {children}
+        <Providers>
+            <Navigation/>
+            {children}
+        </Providers>
         </body>
         </html>
     );
