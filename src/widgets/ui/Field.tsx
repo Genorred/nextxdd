@@ -60,7 +60,7 @@ const Field = () => {
              onClick={resetSelected}
         >
             {cards.map((card, index) =>
-                <ActiveCard key={index + Date.now()} title={card.title} content={card.content} index={index}/>
+                <ActiveCard key={index} title={card.title} content={card.content} index={index}/>
             )}
 
         </div>

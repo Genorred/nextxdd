@@ -30,7 +30,7 @@ interface UseCards {
 export const useCards = create<UseCards>()(immer((set) => ({
     cards: [{
         title: 'Sport',
-        content: 'trahat',
+        content: 'is good for your health',
         left: 10,
         top: 40,
         width: 150,
@@ -39,8 +39,8 @@ export const useCards = create<UseCards>()(immer((set) => ({
         zIndex: 1
     },
         {
-            title: 'Cocking',
-            content: 'a',
+            title: 'Cooking',
+            content: 'i like tasty food',
             left: 0,
             top: 0,
             width: 150,
@@ -49,8 +49,8 @@ export const useCards = create<UseCards>()(immer((set) => ({
             zIndex: 1
         },
         {
-            title: 'Cocking',
-            content: 'a',
+            title: 'Study',
+            content: 'makes you smarter',
             left: 0,
             top: 0,
             width: 150,
