@@ -42,6 +42,7 @@ export const ActiveCard: React.FC<CardProps> = ({title, content, img, index}) =>
             width: `${cards[index].width}px`, height: `${cards[index].height}px`,
             zIndex: cards[index].zIndex+1000
         }}
+             onClick={e => e.stopPropagation()}>
              className={`absolute ${selectedCard === index ? 'border-amber-950 border-2' : 'border-2'}`}
 
         >
